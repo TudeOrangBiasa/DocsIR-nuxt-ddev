@@ -69,7 +69,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 ```bash
 git clone git@github.com:TudeOrangBiasa/DocsIR-nuxt-ddev.git
-cd simple-search-engine
+cd DocsIR-nuxt-ddev
 ```
 
 ### 2. Install Dependencies
