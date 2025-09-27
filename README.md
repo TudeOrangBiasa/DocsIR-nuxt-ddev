@@ -344,10 +344,6 @@ We welcome contributions! Please follow these steps:
 - Write **clear comments** and documentation
 - Test all **search functionality** thoroughly
 
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - **Nuxt Team** - For the amazing framework
@@ -355,17 +351,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Natural.js** - For NLP capabilities
 - **Vue.js Community** - For continuous innovation
 - **TailwindCSS** - For utility-first styling
-
-## 📞 Support
-
-If you encounter any issues or have questions:
-
-1. Check the **Issues** section
-2. Review the **documentation**
-3. Create a **new issue** with detailed information
-4. Join our **community discussions**
-
----
 
 <p align="center">
   <strong>Made with ❤️ using Nuxt 4, Vue 3, and modern web technologies</strong>
