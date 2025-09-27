@@ -6,7 +6,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat&logo=postgresql&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
 
-A modern, AI-powered document search engine built with **Nuxt 4**, **Vue 3**, and **TF-IDF algorithm**. Features a stunning glassmorphism UI with CRT terminal effects and advanced document retrieval capabilities.
+A document search engine built with **Nuxt 4**, **Vue 3**, and **TF-IDF algorithm**. Features a stunning glassmorphism UI with CRT terminal effects and advanced document retrieval capabilities.
 
 ## ✨ Features
 
