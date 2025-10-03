@@ -68,11 +68,11 @@
               <div 
                 v-for="result in searchResults" 
                 :key="result.id" 
-                class="bg-white/20 backdrop-blur-sm rounded-lg border border-white/20 p-4 hover:bg-white/30 transition-all duration-300 cursor-pointer"
+                class="bg-white/20 backdrop-blur-sm rounded-lg border border-white/20 p-4 hover:bg-white/30 transition-all duration-300 cursor-pointer text-left"
                 @click="$emit('openDocument', result)"
               >
                 <div class="flex justify-between items-start mb-2">
-                  <h3 class="font-semibold text-white text-lg flex-1">{{ result.filename }}</h3>
+                  <h3 class="font-semibold text-white text-lg flex-1 text-left">{{ result.filename }}</h3>
                   <div class="flex items-center gap-2">
                     <div v-if="result.score" class="bg-blue-500/30 backdrop-blur-sm px-2 py-1 rounded-full">
                       <span class="text-xs text-blue-200 font-mono">{{ result.score.toFixed(3) }}</span>
@@ -112,8 +112,10 @@
                     <!-- TF-IDF Breakdown -->
                     <div class="space-y-1 mt-2">
                       <div class="text-yellow-200 font-semibold mb-1">📊 TF-IDF Breakdown:</div>
-                      <div v-for="(details, term) in result.tfIdfDetails.termScores" :key="term" class="flex justify-between text-white/80 pl-2">
-                        <span class="font-mono text-yellow-300">{{ term }}:</span>
+                      <div v-for="(details, term) in result.tfIdfDetails.termScores" :key="term" class="flex justify-between text-white/80 pl-2" :class="{ 'text-orange-300': details.isFuzzy }">
+                        <span class="font-mono" :class="details.isFuzzy ? 'text-orange-300' : 'text-yellow-300'">
+                          {{ term }}{{ details.isFuzzy ? ' (fuzzy)' : '' }}:
+                        </span>
                         <span class="font-mono">
                           TF={{ details.tf.toFixed(3) }} × IDF={{ details.idf.toFixed(3) }} = {{ details.tfIdf.toFixed(3) }}
                         </span>
@@ -183,7 +185,7 @@ interface Document {
   score?: number
   tfIdfDetails?: {
     queryTerms: string[]
-    termScores: { [term: string]: { tf: number; idf: number; tfIdf: number } }
+    termScores: { [term: string]: { tf: number; idf: number; tfIdf: number; isFuzzy: boolean } }
     totalScore: number
     cosineSimilarity: number
     tfIdfScore: number

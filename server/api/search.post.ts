@@ -9,7 +9,7 @@ interface SearchResult {
     score: number;
     tfIdfDetails?: {
         queryTerms: string[];
-        termScores: { [term: string]: { tf: number; idf: number; tfIdf: number } };
+        termScores: { [term: string]: { tf: number; idf: number; tfIdf: number; isFuzzy: boolean } };
         totalScore: number;
         cosineSimilarity: number;
         tfIdfScore: number;
@@ -23,6 +23,63 @@ const tokenizeQuery = (text: string): string[] => {
         .toLowerCase()
         .split(/\s+/)
         .filter((token: string) => token.length > 0 && /^[a-zA-Z]+$/.test(token));
+};
+
+// Calculate Levenshtein distance for fuzzy matching
+const levenshteinDistance = (str1: string, str2: string): number => {
+    const matrix = Array(Math.max(str1.length, str2.length) + 1)
+        .fill(null)
+        .map(() => Array(Math.max(str1.length, str2.length) + 1).fill(null));
+
+    for (let i = 0; i <= str1.length; i++) {
+        matrix[0][i] = i;
+    }
+
+    for (let j = 0; j <= str2.length; j++) {
+        matrix[j][0] = j;
+    }
+
+    for (let j = 1; j <= str2.length; j++) {
+        for (let i = 1; i <= str1.length; i++) {
+            const indicator = str1[i - 1] === str2[j - 1] ? 0 : 1;
+            matrix[j][i] = Math.min(
+                matrix[j][i - 1] + 1, // deletion
+                matrix[j - 1][i] + 1, // insertion
+                matrix[j - 1][i - 1] + indicator // substitution
+            );
+        }
+    }
+
+    return matrix[str2.length][str1.length];
+};
+
+// Find fuzzy matches for a term in a list of terms
+const findFuzzyMatches = (queryTerm: string, terms: string[], maxDistance: number = 2): string[] => {
+    const matches = [];
+    for (const term of terms) {
+        const distance = levenshteinDistance(queryTerm, term);
+        if (distance <= maxDistance) {
+            matches.push(term);
+        }
+    }
+    return matches;
+};
+
+// Enhanced tokenization with fuzzy matching
+const expandQueryWithFuzzy = (queryTerms: string[], vocabulary: string[]): string[] => {
+    const expandedTerms = new Set<string>();
+    
+    for (const queryTerm of queryTerms) {
+        // Add exact match
+        expandedTerms.add(queryTerm);
+        
+        // Add fuzzy matches (distance <= 2 for terms >= 4 chars, distance <= 1 for shorter terms)
+        const maxDistance = queryTerm.length >= 4 ? 2 : 1;
+        const fuzzyMatches = findFuzzyMatches(queryTerm, vocabulary, maxDistance);
+        fuzzyMatches.forEach(match => expandedTerms.add(match));
+    }
+    
+    return Array.from(expandedTerms);
 };
 
 // Calculate Term Frequency (TF)
@@ -86,9 +143,10 @@ const cosineSimilarity = (vectorA: number[], vectorB: number[]): number => {
     return dot / (magA * magB);
 };
 
-// Calculate similarity score for query vs document with TF-IDF + Cosine Similarity
+// Calculate similarity score for query vs document with TF-IDF + Cosine Similarity + Fuzzy matching
 const calculateDocumentScore = (
-    queryTerms: string[], 
+    originalQueryTerms: string[],
+    expandedQueryTerms: string[], 
     documentTerms: string[], 
     corpus: string[][], 
     totalDocs: number,
@@ -96,31 +154,37 @@ const calculateDocumentScore = (
     queryVector: number[]
 ): { 
     score: number; 
-    details: { [term: string]: { tf: number; idf: number; tfIdf: number } };
+    details: { [term: string]: { tf: number; idf: number; tfIdf: number; isFuzzy: boolean } };
     cosineSim: number;
     tfIdfScore: number;
 } => {
     let tfIdfScore = 0;
-    const termDetails: { [term: string]: { tf: number; idf: number; tfIdf: number } } = {};
+    const termDetails: { [term: string]: { tf: number; idf: number; tfIdf: number; isFuzzy: boolean } } = {};
     
-    // Calculate traditional TF-IDF score for query terms
-    for (const queryTerm of queryTerms) {
+    // Calculate TF-IDF score for all expanded query terms (including fuzzy matches)
+    for (const queryTerm of expandedQueryTerms) {
         const tf = calculateTF(queryTerm, documentTerms);
         const idf = calculateIDF(queryTerm, corpus, totalDocs);
         const tfIdf = calculateTFIDF(tf, idf);
         
-        termDetails[queryTerm] = { tf, idf, tfIdf };
-        tfIdfScore += tfIdf;
+        // Check if this is a fuzzy match (not in original query terms)
+        const isFuzzy = !originalQueryTerms.includes(queryTerm);
+        
+        // Apply penalty for fuzzy matches
+        const fuzzyPenalty = isFuzzy ? 0.7 : 1.0; // 70% score for fuzzy matches
+        const adjustedTfIdf = tfIdf * fuzzyPenalty;
+        
+        termDetails[queryTerm] = { tf, idf, tfIdf: adjustedTfIdf, isFuzzy };
+        tfIdfScore += adjustedTfIdf;
     }
     
-    // Create TF-IDF vector for document
+    // Create TF-IDF vector for document using expanded terms
     const documentVector = createTFIDFVector(documentTerms, vocabulary, corpus, totalDocs);
     
     // Calculate Cosine Similarity
     const cosineSim = cosineSimilarity(queryVector, documentVector);
     
     // Combined score: TF-IDF + weighted Cosine Similarity
-    // Weight for cosine similarity to strengthen relevance of similar documents
     const cosineWeight = 0.7; // 70% for cosine similarity
     const tfIdfWeight = 0.3;  // 30% for traditional TF-IDF
     
@@ -144,8 +208,8 @@ export default defineEventHandler(async (event) => {
         }
         
         // Tokenize query
-        const queryTerms = tokenizeQuery(query);
-        if (queryTerms.length === 0) {
+        const originalQueryTerms = tokenizeQuery(query);
+        if (originalQueryTerms.length === 0) {
             return { results: [], message: 'No valid terms found in query after preprocessing' };
         }
         
@@ -178,8 +242,11 @@ export default defineEventHandler(async (event) => {
         // Build vocabulary from entire corpus
         const vocabulary = buildVocabulary(corpus);
         
-        // Create TF-IDF vector for query
-        const queryVector = createTFIDFVector(queryTerms, vocabulary, corpus, documents.length);
+        // Expand query terms with fuzzy matching
+        const expandedQueryTerms = expandQueryWithFuzzy(originalQueryTerms, vocabulary);
+        
+        // Create TF-IDF vector for query using expanded terms
+        const queryVector = createTFIDFVector(expandedQueryTerms, vocabulary, corpus, documents.length);
         
         // Calculate similarity score for each document
         const searchResults: SearchResult[] = [];
@@ -187,9 +254,10 @@ export default defineEventHandler(async (event) => {
         corpus.forEach((documentTokens, docIndex) => {
             const document = documentMap[docIndex];
             
-            // Calculate combined score (TF-IDF + Cosine Similarity)
+            // Calculate combined score (TF-IDF + Cosine Similarity + Fuzzy matching)
             const { score: baseScore, details, cosineSim, tfIdfScore } = calculateDocumentScore(
-                queryTerms, 
+                originalQueryTerms,
+                expandedQueryTerms, 
                 documentTokens, 
                 corpus, 
                 documents.length,
@@ -197,18 +265,33 @@ export default defineEventHandler(async (event) => {
                 queryVector
             );
             
-            // Filename boost: check if query terms exist in filename
+            // Filename boost: check if query terms exist in filename (including fuzzy matches)
             let filenameBoost = 0;
             const filenameTokens = tokenizeQuery(document.filename);
             
-            for (const queryTerm of queryTerms) {
+            // Check original query terms first (higher boost)
+            for (const queryTerm of originalQueryTerms) {
                 if (filenameTokens.includes(queryTerm)) {
-                    filenameBoost += 2.0; // Significant boost for filename match
+                    filenameBoost += 2.0; // Significant boost for exact filename match
                 }
                 
                 // Partial matching for filename
                 if (document.filename.toLowerCase().includes(queryTerm)) {
                     filenameBoost += 1.0;
+                }
+            }
+            
+            // Check fuzzy matches in filename (lower boost)
+            for (const queryTerm of expandedQueryTerms) {
+                if (!originalQueryTerms.includes(queryTerm)) {
+                    if (filenameTokens.includes(queryTerm)) {
+                        filenameBoost += 1.0; // Lower boost for fuzzy filename match
+                    }
+                    
+                    // Fuzzy partial matching for filename
+                    if (document.filename.toLowerCase().includes(queryTerm)) {
+                        filenameBoost += 0.5;
+                    }
                 }
             }
             
@@ -227,7 +310,7 @@ export default defineEventHandler(async (event) => {
                 // Add TF-IDF details if debug mode is active
                 if (debugMode) {
                     result.tfIdfDetails = {
-                        queryTerms,
+                        queryTerms: originalQueryTerms,
                         termScores: details,
                         totalScore: finalScore,
                         cosineSimilarity: cosineSim,
@@ -251,7 +334,9 @@ export default defineEventHandler(async (event) => {
             totalFound: searchResults.length,
             queryInfo: {
                 originalQuery: query,
-                processedTerms: queryTerms,
+                originalTerms: originalQueryTerms,
+                expandedTerms: expandedQueryTerms,
+                fuzzyMatches: expandedQueryTerms.filter(term => !originalQueryTerms.includes(term)),
                 totalDocuments: documents.length
             }
         };

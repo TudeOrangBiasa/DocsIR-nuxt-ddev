@@ -13,7 +13,7 @@ export interface Document {
   createdAt?: string
   tfIdfDetails?: {
     queryTerms: string[]
-    termScores: { [term: string]: { tf: number; idf: number; tfIdf: number } }
+    termScores: { [term: string]: { tf: number; idf: number; tfIdf: number; isFuzzy: boolean } }
     totalScore: number
     cosineSimilarity: number
     tfIdfScore: number
@@ -111,10 +111,10 @@ export function useSearch() {
     }
 
     try {
-      const response = await $fetch('/api/delete', {
+      const response = await $fetch<{ success: boolean }>('/api/delete', {
         method: 'POST',
         body: { documentId }
-      }) as { success: boolean }
+      })
 
       if (response.success) {
         // Remove from documents list
