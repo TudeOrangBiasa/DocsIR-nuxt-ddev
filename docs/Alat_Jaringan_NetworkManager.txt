@@ -1,0 +1,1 @@
+NetworkManager adalah layanan yang mengelola koneksi jaringan di sebagian besar distro Linux modern. Ini secara otomatis mendeteksi dan mengkonfigurasi koneksi kabel dan nirkabel. Untuk tugas-tugas baris perintah, paket `net-tools` (dengan perintah seperti `ifconfig`) dan `iproute2` (dengan perintah `ip`) menyediakan kontrol yang kuat atas antarmuka jaringan.

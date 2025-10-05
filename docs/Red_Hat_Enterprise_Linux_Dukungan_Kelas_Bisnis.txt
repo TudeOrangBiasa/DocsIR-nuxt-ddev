@@ -1,0 +1,1 @@
+Red Hat Enterprise Linux (RHEL) adalah distribusi Linux komersial yang ditujukan untuk pasar enterprise. RHEL dikenal karena stabilitas, keamanan, dan dukungannya. RHEL adalah pilihan populer untuk server dan lingkungan mission-critical lainnya.

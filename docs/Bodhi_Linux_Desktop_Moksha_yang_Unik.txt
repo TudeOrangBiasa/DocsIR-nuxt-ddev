@@ -1,0 +1,1 @@
+Bodhi Linux adalah distribusi Linux berbasis Ubuntu yang menggunakan Moksha Desktop Environment. Moksha adalah fork dari Enlightenment E17, yang dikenal sangat ringan dan dapat dikonfigurasi. Bodhi Linux mengikuti filosofi minimalis, hanya menyediakan perangkat lunak esensial dan membiarkan pengguna memilih aplikasi mereka sendiri.

@@ -1,0 +1,1 @@
+Bash is a shell scripting language that can be used to automate tasks in Linux. Bash scripts can be used to perform a variety of tasks, such as creating and deleting files, moving and renaming files, and changing file permissions. Bash scripts can be run from the command line or from a cron job.

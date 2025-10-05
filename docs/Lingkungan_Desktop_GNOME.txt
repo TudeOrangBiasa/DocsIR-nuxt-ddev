@@ -1,0 +1,1 @@
+GNOME adalah salah satu lingkungan desktop paling populer di Linux. Ini berfokus pada pengalaman pengguna yang modern dan sederhana. GNOME menggunakan shell-nya sendiri, yang disebut GNOME Shell, dan dilengkapi dengan serangkaian aplikasi inti yang dirancang dengan baik.

@@ -1,0 +1,1 @@
+Memory management in Linux is the process of allocating and deallocating memory to processes. The Linux kernel is responsible for managing memory, and it uses a variety of techniques to do so, such as paging and swapping. Memory management is a complex topic, but it is an essential skill for any Linux system administrator.

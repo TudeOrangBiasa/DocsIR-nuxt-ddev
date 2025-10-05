@@ -1,0 +1,1 @@
+There are a number of essential Linux commands that every user should know. These commands can be used to perform a variety of tasks, such as creating and deleting files, moving and renaming files, and changing file permissions. Some of the most common Linux commands include ls, cd, mkdir, rm, cp, mv, and chmod.

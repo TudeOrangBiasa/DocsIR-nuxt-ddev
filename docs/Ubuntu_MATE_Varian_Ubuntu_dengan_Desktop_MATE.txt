@@ -1,0 +1,1 @@
+Ubuntu MATE adalah varian resmi dari Ubuntu yang menggunakan lingkungan desktop MATE. MATE adalah fork dari GNOME 2, yang menyediakan pengalaman desktop yang lebih tradisional. Ubuntu MATE adalah pilihan yang bagus untuk pengguna yang menyukai tampilan dan nuansa desktop klasik.

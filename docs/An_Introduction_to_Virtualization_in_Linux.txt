@@ -1,0 +1,1 @@
+Virtualization is the process of creating a virtual version of something, such as a computer, a server, or a network. Virtualization can be used to improve the efficiency and scalability of IT infrastructure. There are a number of different virtualization technologies available, such as VMware, Hyper-V, and KVM.

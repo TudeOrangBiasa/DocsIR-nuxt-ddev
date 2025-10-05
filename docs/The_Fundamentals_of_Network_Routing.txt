@@ -1,0 +1,1 @@
+Routing is the process of forwarding packets from one network to another. Routers are the devices that are responsible for routing packets. Routers use a routing table to determine where to forward packets. The routing table contains a list of all of the known networks and the next hop router for each network.

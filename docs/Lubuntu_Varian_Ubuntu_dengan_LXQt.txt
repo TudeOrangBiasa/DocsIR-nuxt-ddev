@@ -1,0 +1,1 @@
+Lubuntu adalah varian resmi dari Ubuntu yang menggunakan lingkungan desktop LXQt. LXQt sangat ringan dan dirancang untuk berjalan dengan baik di komputer dengan sumber daya terbatas. Lubuntu adalah pilihan yang bagus untuk pengguna yang menginginkan kecepatan dan efisiensi.

@@ -1,0 +1,1 @@
+SparkyLinux adalah distribusi Linux berbasis Debian yang menawarkan beberapa edisi berbeda yang disesuaikan untuk berbagai kebutuhan. Ada edisi stabil untuk penggunaan umum dan edisi semi-rolling untuk pengguna yang menginginkan perangkat lunak yang lebih baru. SparkyLinux juga memiliki edisi khusus untuk gaming, multimedia, dan rescue.

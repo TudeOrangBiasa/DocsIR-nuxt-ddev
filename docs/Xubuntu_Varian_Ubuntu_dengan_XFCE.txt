@@ -1,0 +1,1 @@
+Xubuntu adalah varian resmi dari Ubuntu yang menggunakan lingkungan desktop XFCE. XFCE adalah lingkungan desktop yang ringan, stabil, dan sangat dapat dikonfigurasi. Xubuntu adalah pilihan yang bagus untuk pengguna yang menginginkan keseimbangan antara kinerja dan fungsionalitas.

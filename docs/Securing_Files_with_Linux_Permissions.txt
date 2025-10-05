@@ -1,0 +1,1 @@
+File permissions in Linux are used to control who can access and modify files and directories. There are three types of file permissions: read, write, and execute. These permissions can be set for the owner of the file, the group that the file belongs to, and all other users. File permissions can be changed using the chmod command.

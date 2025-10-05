@@ -1,0 +1,1 @@
+DHCP is a protocol that is used to automatically assign IP addresses to computers on a network. DHCP is a very convenient way to manage IP addresses, and it can save network administrators a lot of time and effort. DHCP is a standard feature on most routers and switches.

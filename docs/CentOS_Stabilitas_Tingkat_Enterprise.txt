@@ -1,0 +1,1 @@
+CentOS (Community ENTerprise Operating System) adalah distribusi Linux gratis yang kompatibel dengan Red Hat Enterprise Linux (RHEL). CentOS dikenal karena stabilitas dan keamanannya, menjadikannya pilihan populer untuk server web dan lingkungan enterprise.

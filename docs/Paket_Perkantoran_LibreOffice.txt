@@ -1,0 +1,1 @@
+LibreOffice adalah paket perkantoran sumber terbuka yang kuat dan gratis. Ini adalah alternatif yang sangat baik untuk Microsoft Office dan mencakup aplikasi untuk pengolah kata (Writer), spreadsheet (Calc), presentasi (Impress), dan banyak lagi. LibreOffice kompatibel dengan format file Microsoft Office dan merupakan standar di sebagian besar distro Linux.

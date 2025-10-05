@@ -1,0 +1,1 @@
+Manajer jendela tiling, seperti i3 dan Sway, secara otomatis mengatur jendela dalam ubin yang tidak tumpang tindih. Ini sangat efisien untuk produktivitas, terutama bagi programmer dan penulis. i3 adalah untuk X11, sedangkan Sway adalah klon i3 untuk Wayland.

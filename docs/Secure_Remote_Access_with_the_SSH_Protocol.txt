@@ -1,0 +1,1 @@
+SSH is a protocol that can be used to securely access a remote computer. SSH encrypts all of the traffic between the client and the server, which makes it very difficult for anyone to eavesdrop on the conversation. SSH can be used to perform a variety of tasks, such as logging into a remote computer, transferring files, and running commands.

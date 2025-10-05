@@ -1,0 +1,1 @@
+Firewall adalah lapisan pertahanan penting untuk sistem Anda. iptables adalah kerangka kerja firewall yang kuat yang terpasang di kernel Linux. ufw (Uncomplicated Firewall) adalah antarmuka yang lebih ramah pengguna untuk mengelola iptables, membuatnya lebih mudah untuk mengkonfigurasi aturan firewall dasar.

@@ -1,0 +1,1 @@
+Slackware adalah distribusi Linux tertua yang masih aktif dikelola. Dikenal karena kesederhanaan dan stabilitasnya, Slackware mengikuti filosofi desain 'Keep It Simple, Stupid' (KISS). Slackware tidak menyediakan banyak alat konfigurasi otomatis, sehingga lebih cocok untuk pengguna Linux yang sudah berpengalaman dan ingin kontrol penuh atas sistem mereka.

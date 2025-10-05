@@ -1,0 +1,1 @@
+iptables is a firewall that is included with most Linux distributions. iptables can be used to create a variety of firewall rules, such as blocking traffic from specific IP addresses, ports, and protocols. iptables is a very powerful and versatile firewall, but it can be difficult to configure.

@@ -1,0 +1,1 @@
+EndeavourOS adalah distribusi Linux berbasis Arch Linux yang bertujuan untuk menjadi gerbang menuju Arch Linux. EndeavourOS menyediakan proses instalasi yang mudah dan lingkungan desktop yang telah dikonfigurasi sebelumnya, sambil tetap memberikan pengguna akses ke semua kekuatan dan fleksibilitas Arch Linux.

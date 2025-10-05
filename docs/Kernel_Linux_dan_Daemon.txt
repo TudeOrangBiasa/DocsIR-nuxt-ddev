@@ -1,0 +1,1 @@
+Kernel adalah inti dari sistem operasi Linux. Ini mengelola sumber daya perangkat keras dan menyediakan layanan untuk semua program lain. Daemon adalah program yang berjalan di latar belakang, melakukan tugas-tugas penting seperti menjadwalkan pekerjaan (cron), mengelola jaringan (NetworkManager), atau mencatat peristiwa sistem (syslog).

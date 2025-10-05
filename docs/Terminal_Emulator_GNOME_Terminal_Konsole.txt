@@ -1,0 +1,1 @@
+Emulator terminal adalah aplikasi yang memberi Anda akses ke shell baris perintah dalam lingkungan grafis. GNOME Terminal adalah default untuk GNOME, Konsole adalah default untuk KDE Plasma, dan xterm adalah emulator terminal standar untuk X11. Ada banyak emulator terminal lain yang tersedia, masing-masing dengan fitur dan opsi penyesuaian yang berbeda.

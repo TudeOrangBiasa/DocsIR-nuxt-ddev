@@ -1,0 +1,1 @@
+MX Linux adalah distribusi Linux kelas menengah yang berbasis Debian Stable. MX Linux berfokus pada kinerja yang solid dan kemudahan penggunaan. MX Linux hadir dengan lingkungan desktop XFCE-nya sendiri, yang ringan dan dapat disesuaikan. MX Linux adalah pilihan yang bagus untuk pengguna yang menginginkan sistem operasi yang stabil dan andal.

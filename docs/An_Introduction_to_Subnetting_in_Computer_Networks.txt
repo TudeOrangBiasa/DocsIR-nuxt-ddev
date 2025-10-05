@@ -1,0 +1,1 @@
+Subnetting is the process of dividing a large network into smaller, more manageable networks. Subnetting can be used to improve network performance, security, and manageability. Subnetting is a complex topic, but it is an essential skill for any network administrator.

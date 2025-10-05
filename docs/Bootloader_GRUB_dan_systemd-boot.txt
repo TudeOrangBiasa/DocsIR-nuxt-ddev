@@ -1,0 +1,1 @@
+Bootloader adalah program yang memuat sistem operasi saat komputer dinyalakan. GRUB (GRand Unified Bootloader) adalah bootloader yang paling umum digunakan di Linux. Ini sangat kuat dan dapat dikonfigurasi. systemd-boot adalah alternatif yang lebih sederhana yang terintegrasi dengan sistem init systemd.

@@ -1,0 +1,1 @@
+Virtualisasi memungkinkan Anda menjalankan beberapa sistem operasi pada satu mesin fisik. KVM (Kernel-based Virtual Machine) adalah solusi virtualisasi yang terpasang di kernel Linux. Kontainerisasi, dengan alat seperti Docker dan Podman, adalah bentuk virtualisasi tingkat sistem operasi yang lebih ringan yang memungkinkan Anda untuk mengemas dan mendistribusikan aplikasi.

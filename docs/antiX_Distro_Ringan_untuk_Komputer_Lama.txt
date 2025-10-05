@@ -1,0 +1,1 @@
+antiX adalah distribusi Linux yang sangat ringan dan cepat, dirancang untuk berjalan di komputer lama dan berdaya rendah. Berbasis Debian Stable, antiX tidak menggunakan systemd, yang membuatnya lebih ringan. antiX adalah pilihan yang sangat baik untuk menghidupkan kembali perangkat keras lama.

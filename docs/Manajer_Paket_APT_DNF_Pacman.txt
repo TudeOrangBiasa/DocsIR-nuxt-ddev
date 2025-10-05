@@ -1,0 +1,1 @@
+Manajer paket mengotomatiskan proses instalasi, pembaruan, dan penghapusan perangkat lunak. APT (Advanced Package Tool) digunakan oleh distro berbasis Debian seperti Ubuntu. DNF (Dandified YUM) digunakan oleh Fedora dan RHEL. Pacman adalah manajer paket untuk Arch Linux. Masing-masing memiliki sintaks dan fitur yang sedikit berbeda.

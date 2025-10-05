@@ -1,0 +1,1 @@
+Disk management in Linux involves a variety of tasks, such as partitioning, formatting, and mounting disks. These tasks can be performed using a variety of tools, such as fdisk, mkfs, and mount. Disk management is an essential skill for any Linux system administrator.

@@ -1,0 +1,1 @@
+An IP address is a unique number that is assigned to every computer that is connected to the Internet. IP addresses are used to identify computers on the Internet and to route traffic between them. There are two types of IP addresses: IPv4 and IPv6. IPv4 addresses are 32 bits long, and IPv6 addresses are 128 bits long.

@@ -1,0 +1,1 @@
+Package managers are used to install, update, and remove software packages in Linux. There are a number of different package managers available, such as apt, yum, and dnf. Package managers make it easy to keep your system up-to-date with the latest software releases.

@@ -1,0 +1,1 @@
+Containers are a lightweight form of virtualization that can be used to package and deploy applications. Containers are becoming increasingly popular because they are more efficient and portable than traditional virtual machines. Docker is the most popular containerization platform.

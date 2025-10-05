@@ -1,0 +1,1 @@
+Linux mendukung berbagai sistem file. ext4 adalah yang paling umum dan stabil. Btrfs adalah sistem file modern dengan fitur-fitur canggih seperti snapshot dan copy-on-write. XFS adalah sistem file berkinerja tinggi yang sering digunakan di server. Pilihan sistem file dapat memengaruhi kinerja dan fitur yang tersedia.

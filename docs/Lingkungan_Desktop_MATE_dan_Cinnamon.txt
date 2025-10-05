@@ -1,0 +1,1 @@
+MATE adalah fork dari GNOME 2, yang menyediakan pengalaman desktop yang lebih tradisional. Cinnamon, yang dikembangkan oleh tim Linux Mint, juga berbasis GNOME tetapi dengan tata letak yang lebih akrab bagi pengguna Windows. Keduanya populer di kalangan pengguna yang tidak menyukai antarmuka GNOME 3.

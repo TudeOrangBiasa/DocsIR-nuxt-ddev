@@ -1,0 +1,1 @@
+Ubuntu adalah salah satu distribusi Linux yang paling populer dan banyak digunakan di dunia. Berbasis Debian, Ubuntu menawarkan pengalaman pengguna yang ramah, instalasi yang mudah, dan dukungan perangkat keras yang luas. Ubuntu dirilis setiap enam bulan, dengan versi Long Term Support (LTS) yang dirilis setiap dua tahun, menjadikannya pilihan yang solid untuk desktop dan server.

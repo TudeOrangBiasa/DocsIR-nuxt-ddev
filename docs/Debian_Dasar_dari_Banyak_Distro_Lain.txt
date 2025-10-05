@@ -1,0 +1,1 @@
+Debian adalah salah satu distribusi Linux tertua dan paling berpengaruh. Dikenal karena stabilitasnya, Debian menjadi dasar bagi banyak distro lain, termasuk Ubuntu. Debian memiliki tiga cabang utama: Stable, Testing, and Unstable (Sid). Ini memberikan pengguna pilihan antara stabilitas yang teruji dan perangkat lunak terbaru.

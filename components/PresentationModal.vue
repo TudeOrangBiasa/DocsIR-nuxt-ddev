@@ -71,6 +71,12 @@ const goToSlide = (index: number) => {
 
 // Keyboard navigation
 const handleKeydown = (event: KeyboardEvent) => {
+  // Don't handle keyboard shortcuts if user is typing in an input field
+  const target = event.target as HTMLElement
+  if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
+    return
+  }
+  
   if (event.key === 'ArrowRight' || event.key === ' ') {
     event.preventDefault()
     nextSlide()

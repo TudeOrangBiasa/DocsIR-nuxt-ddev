@@ -1,0 +1,1 @@
+Vim is a text editor that is included with most Linux distributions. Vim is a powerful and versatile text editor that can be used for a variety of tasks, such as writing code, editing configuration files, and creating documents. Vim has a steep learning curve, but it is a very rewarding text editor to learn.

@@ -1,0 +1,1 @@
+Server tampilan adalah perangkat lunak yang mengelola input (keyboard, mouse) dan output (layar). X11 (atau X.Org) adalah server tampilan tradisional yang telah digunakan selama bertahun-tahun. Wayland adalah pengganti modern untuk X11 yang menawarkan keamanan dan kinerja yang lebih baik, dan diadopsi oleh semakin banyak distro.

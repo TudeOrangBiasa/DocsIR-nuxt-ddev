@@ -1,0 +1,1 @@
+In Linux, users and groups are used to control access to files and directories. Each user has a unique username and user ID, and each group has a unique group name and group ID. Users can be members of one or more groups. File permissions can be set to allow or deny access to files and directories for specific users and groups.

@@ -1,0 +1,1 @@
+Firefox adalah peramban web sumber terbuka yang populer yang dikembangkan oleh Mozilla Foundation. Ini dikenal karena fokusnya pada privasi dan penyesuaian. Chromium adalah proyek peramban web sumber terbuka yang menjadi dasar bagi Google Chrome. Banyak distro Linux menawarkan Chromium di repositori mereka sebagai alternatif sumber terbuka untuk Chrome.

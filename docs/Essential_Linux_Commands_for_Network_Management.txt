@@ -1,0 +1,1 @@
+There are a number of essential Linux commands that every network administrator should know. These commands can be used to perform a variety of tasks, such as configuring network interfaces, troubleshooting network problems, and monitoring network traffic. Some of the most common Linux network commands include ifconfig, ping, traceroute, and netstat.

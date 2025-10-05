@@ -1,0 +1,1 @@
+A VPN is a virtual private network. A VPN can be used to create a secure connection over a public network, such as the Internet. VPNs are often used by businesses to allow employees to securely access the corporate network from home or from other remote locations.

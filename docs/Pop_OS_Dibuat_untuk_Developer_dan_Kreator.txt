@@ -1,0 +1,1 @@
+Pop!_OS adalah distribusi Linux berbasis Ubuntu yang dikembangkan oleh System76, sebuah produsen komputer Linux. Pop!_OS dirancang untuk para pengembang, pembuat, dan profesional kreatif. Pop!_OS hadir dengan sejumlah fitur yang berguna, seperti tiling window manager otomatis dan dukungan untuk kartu grafis NVIDIA.

@@ -1,0 +1,1 @@
+Kali Linux adalah distribusi Linux berbasis Debian yang dirancang untuk pengujian penetrasi dan audit keamanan. Kali Linux hadir dengan berbagai alat keamanan yang telah diinstal sebelumnya, menjadikannya pilihan populer bagi para profesional keamanan.

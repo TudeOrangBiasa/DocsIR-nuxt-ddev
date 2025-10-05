@@ -1,0 +1,1 @@
+openSUSE adalah distribusi Linux yang stabil dan fleksibel yang tersedia dalam dua edisi: Leap dan Tumbleweed. Leap adalah rilis reguler yang berfokus pada stabilitas, sedangkan Tumbleweed adalah rilis bergulir yang menyediakan perangkat lunak terbaru. openSUSE adalah pilihan yang bagus untuk pengguna yang menginginkan pilihan antara stabilitas dan perangkat lunak terbaru.

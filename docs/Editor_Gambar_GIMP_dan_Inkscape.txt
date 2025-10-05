@@ -1,0 +1,1 @@
+GIMP (GNU Image Manipulation Program) adalah editor gambar raster sumber terbuka yang kuat, sering disebut sebagai alternatif gratis untuk Adobe Photoshop. Inkscape adalah editor grafik vektor sumber terbuka yang kuat, sebanding dengan Adobe Illustrator. Keduanya adalah alat penting untuk materi iklan di Linux.

@@ -1,0 +1,1 @@
+Sistem init adalah proses pertama yang dijalankan oleh kernel saat boot. Ini bertanggung jawab untuk memulai semua proses lain. Systemd adalah sistem init modern yang digunakan oleh sebagian besar distro Linux utama. SysVinit adalah sistem init yang lebih tua dan lebih tradisional. Keduanya memiliki cara kerja yang berbeda dalam mengelola layanan sistem.

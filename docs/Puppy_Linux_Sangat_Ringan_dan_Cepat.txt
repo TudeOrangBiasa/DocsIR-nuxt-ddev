@@ -1,0 +1,1 @@
+Puppy Linux adalah distribusi Linux yang sangat ringan dan cepat. Seluruh sistem operasi dapat dijalankan dari RAM, membuatnya sangat responsif. Puppy Linux sangat cocok untuk komputer lama atau sebagai sistem operasi portabel yang dapat dijalankan dari USB flash drive.

@@ -1,0 +1,1 @@
+Mencadangkan data Anda sangat penting. rsync adalah utilitas baris perintah yang kuat untuk menyinkronkan file dan direktori. Timeshift adalah alat grafis yang berfokus pada pembuatan snapshot sistem, mirip dengan System Restore di Windows atau Time Machine di macOS. Menggunakan alat-alat ini dapat menyelamatkan Anda dari kehilangan data.

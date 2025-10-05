@@ -1,0 +1,1 @@
+VLC (VideoLAN Client) adalah pemutar media lintas platform yang sangat populer yang dapat memutar hampir semua format audio atau video. Ini dikenal karena keserbagunaan dan kemampuannya untuk menangani file yang rusak. Banyak distro Linux juga menyertakan pemutar musik khusus seperti Rhythmbox (untuk GNOME) atau Clementine.

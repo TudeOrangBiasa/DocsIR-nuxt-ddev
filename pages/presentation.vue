@@ -169,9 +169,21 @@ const prevSlide = () => {
 
 // Keyboard navigation
 const handleKeydown = (event) => {
+  console.log('Global keydown event:', event.key, 'Target:', event.target.tagName)
+  
+  // Don't handle keyboard shortcuts if user is typing in an input field
+  if (event.target && (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA')) {
+    console.log('Ignoring keydown because user is typing in input field')
+    return
+  }
+  
   if (event.key === 'ArrowRight' || event.key === ' ') {
+    console.log('Handling navigation key:', event.key)
+    event.preventDefault()
     nextSlide()
   } else if (event.key === 'ArrowLeft') {
+    console.log('Handling navigation key:', event.key)
+    event.preventDefault()
     prevSlide()
   }
 }

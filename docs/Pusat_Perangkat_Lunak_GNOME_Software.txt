@@ -1,0 +1,1 @@
+Pusat perangkat lunak menyediakan antarmuka grafis yang ramah pengguna untuk menemukan dan menginstal aplikasi. GNOME Software adalah pusat perangkat lunak default untuk GNOME, sementara KDE Discover adalah mitranya untuk KDE Plasma. Mereka membuat proses manajemen perangkat lunak menjadi lebih mudah bagi pengguna baru.

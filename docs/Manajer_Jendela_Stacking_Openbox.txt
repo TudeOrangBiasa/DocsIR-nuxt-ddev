@@ -1,0 +1,1 @@
+Manajer jendela stacking, seperti Openbox, adalah jenis yang lebih tradisional di mana jendela dapat tumpang tindih dan dipindahkan dengan bebas. Openbox sangat ringan dan dapat dikonfigurasi, dan sering digunakan sebagai dasar untuk lingkungan desktop yang lebih lengkap atau sebagai manajer jendela mandiri.

@@ -1,6 +1,6 @@
 name: simple-search-engine
 type: generic
-docroot: .output/public
+docroot: ""
 php_version: "8.3"
 webserver_type: nginx-fpm
 xdebug_enabled: false
@@ -11,9 +11,8 @@ database:
     version: "16"
 use_dns_when_possible: true
 composer_version: "2"
-nodejs_version: "22"
-corepack_enable: true
 web_environment: []
+corepack_enable: false
 
 # Key features of DDEV's config.yaml:
 

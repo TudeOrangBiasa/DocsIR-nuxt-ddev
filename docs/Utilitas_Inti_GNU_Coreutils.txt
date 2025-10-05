@@ -1,0 +1,1 @@
+GNU Core Utilities (Coreutils) adalah paket perangkat lunak yang berisi banyak perintah dasar yang diperlukan untuk sistem operasi mirip Unix. Perintah-perintah ini termasuk `ls`, `cp`, `mv`, `rm`, `cat`, `chmod`, dan banyak lagi. Hampir setiap operasi yang Anda lakukan di baris perintah menggunakan salah satu dari utilitas ini.

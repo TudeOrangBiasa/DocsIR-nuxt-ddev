@@ -1,0 +1,1 @@
+Manajer file grafis memungkinkan Anda untuk berinteraksi dengan sistem file Anda secara visual. Nautilus adalah manajer file default untuk GNOME. Dolphin adalah manajer file untuk KDE Plasma, yang dikenal dengan fitur-fiturnya yang kuat. Thunar adalah manajer file default untuk XFCE, yang ringan dan cepat.

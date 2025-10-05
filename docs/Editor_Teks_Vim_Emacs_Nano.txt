@@ -1,0 +1,1 @@
+Editor teks baris perintah sangat penting di Linux. Vim dan Emacs adalah dua editor yang sangat kuat dan dapat diperluas, tetapi memiliki kurva belajar yang curam. Nano adalah editor yang jauh lebih sederhana dan lebih mudah digunakan untuk pemula, menjadikannya pilihan yang baik untuk pengeditan file konfigurasi cepat.

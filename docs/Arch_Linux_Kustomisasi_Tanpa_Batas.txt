@@ -1,0 +1,1 @@
+Arch Linux adalah distribusi Linux yang ringan dan fleksibel yang ditujukan untuk pengguna tingkat lanjut. Arch Linux mengikuti model rilis bergulir (rolling release), yang berarti pengguna selalu memiliki perangkat lunak versi terbaru. Arch Linux sangat dapat disesuaikan dan memberikan pengguna kontrol penuh atas sistem mereka.

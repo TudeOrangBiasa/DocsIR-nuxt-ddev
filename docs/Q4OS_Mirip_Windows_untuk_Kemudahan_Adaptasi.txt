@@ -1,0 +1,1 @@
+Q4OS adalah distribusi Linux berbasis Debian yang dirancang agar terlihat dan terasa seperti Windows. Tujuannya adalah untuk memberikan transisi yang mudah bagi pengguna Windows yang ingin mencoba Linux. Q4OS menggunakan lingkungan desktop Trinity, yang merupakan fork dari KDE 3.

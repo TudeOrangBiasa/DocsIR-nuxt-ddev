@@ -1,0 +1,1 @@
+IGOS Nusantara adalah distribusi Linux yang dikembangkan di Indonesia. Berbasis pada berbagai distro populer, IGOS Nusantara bertujuan untuk menyediakan sistem operasi yang sesuai dengan kebutuhan pengguna di Indonesia. IGOS Nusantara menyertakan perangkat lunak dan konten lokal, serta dukungan untuk bahasa Indonesia.

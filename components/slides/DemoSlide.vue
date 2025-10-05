@@ -26,8 +26,8 @@
                   <span class="text-green-400">🔍</span>
                   <input 
                     type="text" 
-                    value="bash scripting tutorial"
-                    readonly
+                    v-model="demoQuery"
+                    placeholder="Try typing: bash scripting tutorial"
                     class="bg-transparent text-white text-lg outline-none flex-1"
                   >
                 </div>
@@ -237,6 +237,28 @@
           </div>
         </div>
 
+        <!-- Test Input for Debugging -->
+        <div class="bg-red-900/20 rounded-lg p-6 border border-red-500/30 mb-8">
+          <h3 class="text-2xl font-bold text-red-400 mb-4">🐛 Debug Test Input</h3>
+          <p class="text-gray-300 mb-4">Test input untuk memastikan spasi bekerja:</p>
+          <div class="bg-gray-900 rounded-lg p-4">
+            <input 
+              type="text" 
+              v-model="testInput"
+              placeholder="Type something with spaces here..."
+              class="w-full bg-transparent text-white text-lg outline-none border border-gray-600 rounded px-4 py-2"
+              @input="onTestInput"
+              @keydown="onTestKeydown"
+            >
+          </div>
+          <div class="mt-2 text-sm text-gray-400">
+            Current value: "{{ testInput }}"
+          </div>
+          <div class="mt-2 text-sm text-gray-400">
+            Last key pressed: {{ lastKey }}
+          </div>
+        </div>
+
         <!-- Live Demo Button -->
         <div class="text-center">
           <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg p-8 border border-blue-500/50">
@@ -259,5 +281,25 @@
 </template>
 
 <script setup>
-// Demo slide
+import { ref } from 'vue'
+
+// Demo slide reactive data
+const demoQuery = ref('bash scripting tutorial')
+const testInput = ref('')
+const lastKey = ref('')
+
+// Debug event handlers
+const onTestInput = (event) => {
+  console.log('Input event:', event.target.value)
+}
+
+const onTestKeydown = (event) => {
+  lastKey.value = event.key
+  console.log('Keydown event:', event.key, 'Target:', event.target.tagName)
+  
+  // Don't prevent default for input
+  if (event.key === ' ') {
+    console.log('Space key detected in input')
+  }
+}
 </script>

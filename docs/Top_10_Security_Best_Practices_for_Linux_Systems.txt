@@ -1,0 +1,1 @@
+There are a number of security best practices that should be followed to protect Linux systems from attack. These best practices include keeping the system up-to-date with the latest security patches, using strong passwords, and disabling unnecessary services. By following these best practices, you can help to keep your Linux systems secure.

@@ -1,0 +1,1 @@
+Manajer tampilan (atau manajer login) adalah layar yang Anda lihat saat pertama kali menyalakan komputer, di mana Anda memasukkan nama pengguna dan kata sandi. GDM (GNOME Display Manager) adalah default untuk GNOME, SDDM (Simple Desktop Display Manager) adalah default untuk KDE Plasma, dan LightDM adalah alternatif ringan yang populer.

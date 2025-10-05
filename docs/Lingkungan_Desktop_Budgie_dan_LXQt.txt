@@ -1,0 +1,1 @@
+Budgie adalah lingkungan desktop yang dikembangkan oleh proyek Solus, yang berfokus pada kesederhanaan dan keanggunan. LXQt adalah lingkungan desktop yang sangat ringan yang merupakan hasil penggabungan proyek LXDE dan Razor-qt. Keduanya adalah pilihan yang bagus untuk pengguna yang menginginkan desktop yang modern namun efisien.

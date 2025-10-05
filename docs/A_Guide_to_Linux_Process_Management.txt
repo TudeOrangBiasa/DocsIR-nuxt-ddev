@@ -1,0 +1,1 @@
+A process is a program that is running in memory. In Linux, processes can be managed using a variety of commands, such as ps, top, and kill. The ps command can be used to list all of the running processes, the top command can be used to view the real-time status of the running processes, and the kill command can be used to terminate a process.

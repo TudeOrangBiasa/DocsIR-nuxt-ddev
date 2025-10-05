@@ -1,0 +1,1 @@
+Firewalls are devices that are used to protect networks from unauthorized access. Firewalls can be used to block traffic from specific IP addresses, ports, and protocols. Firewalls are an essential part of any network security plan.

@@ -1,0 +1,1 @@
+Manjaro adalah distribusi Linux berbasis Arch Linux yang ramah pengguna. Manjaro bertujuan untuk membuat Arch Linux dapat diakses oleh semua orang, terlepas dari tingkat keahlian mereka. Manjaro hadir dengan tiga lingkungan desktop utama: XFCE, KDE, dan GNOME.

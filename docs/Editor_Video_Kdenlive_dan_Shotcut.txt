@@ -1,0 +1,1 @@
+Kdenlive dan Shotcut adalah dua editor video non-linear sumber terbuka yang populer di Linux. Keduanya menawarkan berbagai fitur canggih untuk mengedit video, termasuk garis waktu multi-track, transisi, efek, dan banyak lagi. Mereka adalah alternatif yang bagus untuk perangkat lunak pengeditan video berpemilik.

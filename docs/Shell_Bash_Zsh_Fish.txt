@@ -1,0 +1,1 @@
+Shell adalah antarmuka baris perintah yang memungkinkan Anda berinteraksi dengan sistem. Bash (Bourne Again SHell) adalah shell default di sebagian besar distro Linux. Zsh (Z shell) adalah alternatif populer dengan banyak fitur tambahan. Fish (Friendly Interactive SHell) berfokus pada kemudahan penggunaan dan fitur interaktif.

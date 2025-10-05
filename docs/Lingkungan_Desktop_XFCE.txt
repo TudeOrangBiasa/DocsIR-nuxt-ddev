@@ -1,0 +1,1 @@
+XFCE adalah lingkungan desktop yang ringan dan cepat. Ini dirancang untuk menjadi modular dan menggunakan sumber daya sistem yang rendah, menjadikannya pilihan yang bagus untuk perangkat keras yang lebih tua atau bagi mereka yang menginginkan kinerja maksimal. XFCE sangat dapat dikonfigurasi dan stabil.

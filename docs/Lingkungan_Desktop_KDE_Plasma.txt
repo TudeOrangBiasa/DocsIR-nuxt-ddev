@@ -1,0 +1,1 @@
+KDE Plasma adalah lingkungan desktop yang kuat dan sangat dapat disesuaikan. Ini dikenal dengan tampilannya yang modern dan kaya fitur. Plasma menggunakan toolkit Qt dan dilengkapi dengan berbagai aplikasi yang kuat dan terintegrasi dengan baik.

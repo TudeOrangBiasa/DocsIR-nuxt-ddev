@@ -59,6 +59,13 @@ onUnmounted(() => {
 
 // Keyboard shortcuts
 const handleKeydown = (event: KeyboardEvent) => {
+  const target = event.target as HTMLElement
+  
+  // Don't handle any keys if user is typing in input or textarea
+  if (target && (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
+    return
+  }
+  
   if (event.key === 'Escape' && showPresentationModal.value) {
     closePresentationModal()
   }

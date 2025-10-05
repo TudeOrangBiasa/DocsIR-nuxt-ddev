@@ -83,6 +83,7 @@
                 type="text"
                 :value="searchQuery"
                 @input="$emit('update:searchQuery', ($event.target as HTMLInputElement).value)"
+                @keydown="onSearchKeydown"
                 placeholder="Search documents..."
                 class="w-full py-4 pl-12 pr-4 bg-transparent text-white placeholder-white/70 text-lg outline-none"
               />
@@ -98,6 +99,7 @@
                   type="text"
                   :value="searchQuery"
                   @input="$emit('update:searchQuery', ($event.target as HTMLInputElement).value)"
+                  @keydown="onSearchKeydown"
                   placeholder="Search documents..."
                   class="w-full py-4 pl-12 pr-4 bg-transparent text-white placeholder-white/70 text-lg outline-none"
                 />
@@ -193,4 +195,9 @@ defineEmits<{
   'open-upload': []
   'open-document-manager': []
 }>()
+
+// Clean keydown handler (no longer needed for debugging)
+const onSearchKeydown = (event: KeyboardEvent) => {
+  // Space key should work normally now
+}
 </script>

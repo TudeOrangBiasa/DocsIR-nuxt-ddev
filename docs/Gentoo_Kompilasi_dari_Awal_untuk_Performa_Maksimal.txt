@@ -1,0 +1,1 @@
+Gentoo adalah distribusi Linux yang unik di mana hampir semua perangkat lunak dikompilasi dari kode sumber. Ini memungkinkan pengguna untuk mengoptimalkan sistem mereka untuk perangkat keras spesifik mereka dan hanya menginstal perangkat lunak yang mereka butuhkan. Gentoo sangat fleksibel dan dapat disesuaikan, tetapi membutuhkan banyak waktu dan pengetahuan untuk menginstalnya.
